@@ -1,5 +1,8 @@
 # django-gulp
-Wellfire's Django-centric front-end buiuld process
+Wellfire's Django-centric front-end build process using Gulp.
+
+## Front-end Pre-processors
+Wellfire uses Jade (for HTML), Stylus (for CSS), and CoffeeScript (for JS) as they most align to the coding style dictated by Python. 
 
 ## Package.json
 
@@ -42,8 +45,7 @@ Wellfire's Django-centric front-end buiuld process
 
 01. run `npm install --global gulp`
 02. run `npm install`
-03. open `gulpfile.js` and switch out the `site_file` value
-    with the correct path for your `site.yaml` file (already set up in this project)
+03. open `gulpfile.js` and switch out the `site_file` value with the correct path for your `site.yaml` file (already set up in this project). Wellfire puts the front-end configuration within the front-end dev area (`_dev`) to keep the base folder clean and not step on any Django/Server configurations that need to move to various server environments.
 04. run `gulp` or `gulp help` to see the options
 
 ## Using Browser-Sync
