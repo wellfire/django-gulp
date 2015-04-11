@@ -1,0 +1,231 @@
+# SITE CONTENT CENTRIC
+url: ""
+
+#DJANGO CENTRIC
+
+# JS CENTRIC
+
+# CSS CENTRIC
+
+# PROJECT CENTRIC
+type: DJANGO # PROJECT TYPE (STATIC / DJANGO / JEKYLL)
+host: localhost
+port: 8000
+
+# PRE-PROCESSORS
+jade:
+    glob:
+        - "**/*.jade"
+        - "!_mixins/**/*.jade"
+    pretty: true
+
+stylus:
+    glob:
+        - "*.styl"
+        - "!_*.styl"
+
+coffee:
+    glob:
+        - **/*.coffee
+    output: app.js
+
+# ASSET PATHS
+path:
+    src:
+        base: _dev
+        data: _data
+        html: templates
+        css: css
+        js: js
+        assets: res
+        vendor: bower_components
+
+    build:
+        base: app
+        html: templates
+        static: assets
+        css: css
+        js: js
+        assets: res
+        vendor: vendor
+
+
+
+
+#
+#
+#  MOVE TO NEW FILE
+#
+#
+socialnav:
+  fb: "https://www.facebook.com/communitiesinschools"
+  tw: "https://twitter.com/cisnational"
+  yt: "https://www.youtube.com/user/communitiesinschools"
+  in: "https://www.linkedin.com/company/communities-in-schools"
+  ig: "http://instagram.com/communitiesinschools"
+  pt: "http://www.pinterest.com/cisnational/"
+  tu: "http://communitiesinschools.tumblr.com/"
+  gp: "https://plus.google.com/113213116668578078182/posts"
+
+
+routes:
+  blog:
+    title: Our Blog
+    url: /blog/
+    active: true
+    analytics_tag: our blog
+    target: "_top"
+
+  affiliate:
+    title: Find Your Affiliate
+    url: /about/where/
+    active: true
+    analytics_tag: find your affiliate
+    target: "_top"
+
+  take_action:
+    title: Take Action
+    active: true
+    analytics_tag: take action
+    url: http://advocacy.communitiesinschools.org/cisnet/app/write-a-letter?0&engagementId=76995
+    # target: "_blank"
+    # url: http://advocacy.communitiesinschools.org/takeaction
+
+  shop:
+    title: Our Shop
+    active: true
+    analytics_tag: our shop
+    target: "_blank"
+    url: http://shop.communitiesinschools.org
+
+  contact:
+    title: Contact Us
+    active: true
+    url: /contact-us/
+
+  press:
+    title: Press Room
+    active: true
+    url: "/press-room/"
+
+  careers:
+    title: Careers
+    active: true
+    url: "/about/careers/"
+
+  terms:
+    title: Terms & Conditions
+    active: true
+    url: /terms/
+
+  privacy:
+    title: Privacy Policy
+    active: true
+    url: /privacy-policy/
+
+
+sitemap:
+  - title: About Us
+    nav_type: [nav_pri]
+    url: /about/
+    active: true
+    analytics_tag: about us
+
+  - title: Our Work
+    nav_type: [nav_pri]
+    url: /our-work/
+    active: true
+    analytics_tag: our work
+
+  - title: Our Results
+    nav_type: [nav_pri]
+    url: /our-impact/
+    active: true
+    analytics_tag: our results
+
+  - title: How You Can Help
+    nav_type: [nav_pri]
+    url: "/help/"
+    active: true
+    analytics_tag: how you can help
+
+  - title: Our Blog
+    url: /blog/
+    nav_type: [nav_gbl]
+    active: true
+    analytics_tag: our blog
+    target: "_top"
+
+  - title: Find Your Affiliate
+    url: /about/where/
+    nav_type: [nav_gbl]
+    active: true
+    analytics_tag: find your affiliate
+    target: "_top"
+
+  - title: Take Action
+    nav_type: [nav_gbl]
+    active: true
+    analytics_tag: take action
+    target: "_blank"
+    url: http://advocacy.communitiesinschools.org/takeaction
+
+  - title: Contact Us
+    nav_type: [nav_ext]
+    active: true
+    url: /contact-us/
+
+  - title: Press Room
+    nav_type: [nav_ext]
+    active: true
+    url: "/press-room/"
+
+  - title: Careers
+    nav_type: [nav_ext]
+    active: true
+    url: "/about/careers/"
+
+  - title: Privacy Policy
+    nav_type: [nav_ext]
+    active: true
+    url: /privacy-policy/
+
+
+about_us_map:
+  - title: Our National Leadership
+    url: /about/our-leadership/
+
+  - title: Our Partners
+    url: /about/our-partners/
+
+  - title: Our Funders
+    url: /about/our-funders/
+
+  - title: Our Fellows
+    url: /about/our-fellows/
+
+  - title: Affiliate Finder
+    url: /about/where/
+
+  - title: Financial Information
+    url: /about/financial-information/
+
+  - title: Publications
+    url: /about/publications/
+
+  - title: Careers
+    url: /about/careers/
+
+  - title: FAQS
+    url: /faq/
+
+
+our_work_map:
+  - title: Our Work in Schools
+    url: /our-work/in-schools/
+
+  - title: Our Policy Work
+    url: /our-work/policy/
+
+  - title: News
+    url: /our-work/news/
